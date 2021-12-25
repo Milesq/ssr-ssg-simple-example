@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "spa": "spassr -d src -s src/index.js -e src/page.html",
+    "ssr": "yarn spa -r",
+    "ssg": "spank && cp src/index.js dist"
+  },
+  "dependencies": {
+    "spank": "^1.4.0",
+    "spassr": "^2.1.6",
+    "tossr": "^1.3.1"
+  }
+}
